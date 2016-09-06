@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box; /* pour maîtriser width et flex-basis */
+}
+
+html {
+	display: flex; flex-direction: column; /* correction bug IE de min-height non appliqué à body */
+	font-family: 'Roboto', sans-serif;
+	font-weight:300;
+}
+
+
+.ecran{display:none;position:absolute;}
+/* Le sommaire */
+
+.ecran.sommaire{
+	display: flex; /* crée un contexte flex pour ses enfants */
+	flex-direction: row;
+	flex-wrap: wrap;
+	min-height: 100vh;
+	opacity:1;
+	background-color: white;
+	z-index:1000
+}
+
+
+.cel{
+	flex: 1 1 auto;
+	background: #eee;
+	margin: 1vw 1% ;
+	padding:1%;
+	border:1px solid #ccc;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+
+.cel-1{width:48%;}
+.cel-2{width:48%;}
+.cel-3{width:23%;}
+.cel-4{width:23%;}
+.cel-5{width:48%;}
+.cel-6{width:48%;}
+.cel-centre{
+	width:48%;
+	cursor: default;
+}
+
+.cel h1{
+	font-size: 2em;
+}
+
+.cel h2{
+	font-size: 16px;
+	font-weight: 400;
+}
+.cel > .contenu{
+	width:100%;
+	text-align: center
+}
+
+
+/* fin du  sommaire */
+
+/* satellite */
+.satellite{
+	background-color: white;
+}
+.wrapper {
+	display: flex; /* crée un contexte flex pour ses enfants */
+	flex-direction: column; /* affichage vertical */
+	min-height: 100vh; /* toute la hauteur du viewport */
+	padding: 1%;
+}
+
+.ligne{
+	flex: 1 1 auto; /* occupe la hauteur restante */
+	display: flex; /* crée un contexte flex pour ses enfants */
+	flex-direction: row;
+}
+
+.ecran.satellite .sommaire li {margin: 10px}
+.ecran.satellite .titre-sat{margin:20px;}
+
+/*
+.ecran.satellite{display: none;}
+.ecran.satellite{display: none;}
+.ecran.satellite{display: none;}
+.ecran.satellite{display: none;}
+.ecran.satellite{display: none;}
+.ecran.satellite{display: none;}
+*/
+
+.col{
+	flex: 1 1 auto;
+	background: #eee;
+	margin:1%;
+	padding:1%;
+	border:1px solid #ccc;
+	display: flex;
+	flex-direction: column;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.col-gauche{justify-content: center;width:33.33%;text-align: center;}
+.col-droite{width:66.66%;}
+
+
+.satellite .toolbar{width:100%;}
+.satellite .btnFermerSat{cursor:pointer; width:24px; height:24px; line-height:24px; border-radius:12px;border:1px solid #ccc;
+background:#aaa; color:#fff; text-align:center; float: right}
+.satellite .intro{margin:20px;}
+.satellite .sommaire{margin:20px;}
+/* fin satellite */
+
+/* sous-satellite (modale) */
+.modale{
+	display:none;
+	position:absolute;
+	height: 100vh;
+	width: 100vw;
+	top:0;
+	left:0;
+	z-index: 2000
+}
+.overlay{
+	position: absolute;
+	left:0;
+	top:0;
+	height: 100vh;
+	width: 100vw;
+	background: #fff;
+	opacity: 0.8;
+	z-index: 1999
+}
+
+.wrapper-modale{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width:66%;
+	border:1px solid #ccc;
+	background: #fff;
+	margin:auto;
+	padding:10px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #ccc
+}
+
+.modale .toolbar{flex: 1 1 auto;}
+.modale .btnFermerModale{cursor: pointer;width:24px;height: 24px;line-height: 24px;border-radius:12px;border:1px solid #ccc;
+background: #aaa;color:#fff;text-align: center;float: right}
+
+.modale .titre-modale{margin:0px 20px 20px 20px;}
+.modale .intro{margin-left:20px;}
+.modale .sommaire{margin:20px}
+.modale .sommaire li{margin:10px}
+.modale .titre-modale{font-weight: bold}
+
+.modale a, .modale a:visited, .modale a:active{
+  color:#337ab7;
+  text-decoration: none;
+  font-weight: 700
+}
+.modale a:hover{
+  text-decoration: underline;
+}
+
+.modale a::after{content: url(icon-external-link.png);padding-left: 3px;}
+
+/* fin sous-satellite */
+
+
+
+@media only screen 
+and (max-device-width: 736px) {
+	/* sommaire */
+	.ecran.sommaire{flex-direction: column;}
+	.cel h1{font-size: 1.3em;}
+	.cel-1{width:96%;}
+	.cel-2{width:96%;}
+	.cel-3{width:96%;}
+	.cel-4{width:96%;}
+	.cel-5{width:96%;}
+	.cel-6{width:96%;}
+	.cel-centre{order:-1;width:96%;}
+	/* satellite */
+	.ligne{flex-direction: column;}
+	.col-gauche{width:98%;}
+	.col-droite{width:98%;}
+	.satellite .intro {margin-bottom:0;}
+	.satellite .sommaire {margin-top:0;}
+
+	/* sous-satellite */
+	.wrapper-modale{width:90%}
+	.modale .sommaire {margin-top:0;}
+	.modale .sommaire ul{padding:0 20px 20px 20px}
+	.modale .sommaire li{margin-left:0}
+};
