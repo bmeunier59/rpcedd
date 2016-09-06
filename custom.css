@@ -2,7 +2,6 @@
 .ecran.sommaire{color:#fff;}
 .sommaire .cel-centre{
 	background-image: url(img/bois-3.jpg);
-	background-repeat: no-repeat;
 	background-size: cover
 }
 .sommaire .cel-1{background-color: #458913}
