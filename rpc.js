@@ -67,7 +67,6 @@ $(document).ready(function(){
 		var satName = "sat-"+jqElem.parents('.ecran').attr("class").slice(-1);
 		var itemName = "itemsat-"+jqElem.attr("class").slice(-1);
 		var selecteur = ".modale."+satName+"."+itemName;
-		console.log(selecteur)
 		$(selecteur).before('<div class="overlay"></div>');
 		$(selecteur).css({display:'flex'});
 	});
