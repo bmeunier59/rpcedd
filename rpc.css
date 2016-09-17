@@ -170,6 +170,9 @@ background: #aaa;color:#fff;text-align: center;float: right}
 }
 
 .modale a::after{content: url(icon-external-link.png);padding-left: 3px;}
+.modale .pdf::after{content: url(pdf.png);padding-left: 3px;}
+.modale .video::after{content: url(video.png);padding-left: 3px;}
+.modale .zip::after{content: url(zip.png);padding-left: 3px;}
 
 /* fin sous-satellite */
 
