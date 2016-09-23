@@ -169,10 +169,10 @@ background: #aaa;color:#fff;text-align: center;float: right}
   text-decoration: underline;
 }
 
-.modale a::after{content: url(icon-external-link.png);padding-left: 3px;}
-.modale .pdf::after{content: url(pdf.png);padding-left: 3px;}
-.modale .video::after{content: url(video.png);padding-left: 3px;}
-.modale .zip::after{content: url(zip.png);padding-left: 3px;}
+.modale a::after{content: url(img/icon-external-link.png);padding-left: 3px;}
+.modale .pdf::after{content: url(img/pdf.png);padding-left: 3px;}
+.modale .video::after{content: url(img/video.png);padding-left: 3px;}
+.modale .zip::after{content: url(img/zip.png);padding-left: 3px;}
 
 /* fin sous-satellite */
 
