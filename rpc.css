@@ -8,6 +8,7 @@ html {
 	font-weight:300;
 }
 
+body{margin:0;padding:0;}
 
 .ecran{display:none;position:absolute;}
 /* Le sommaire */
@@ -17,6 +18,7 @@ html {
 	flex-direction: row;
 	flex-wrap: wrap;
 	min-height: 100vh;
+	min-width:100vw;
 	opacity:1;
 	background-color: white;
 	z-index:1000
@@ -37,14 +39,14 @@ html {
 }
 
 
-.cel-1{width:48%;}
-.cel-2{width:48%;}
+.cel-1{width:46%;}
+.cel-2{width:46%;}
 .cel-3{width:23%;}
 .cel-4{width:23%;}
-.cel-5{width:48%;}
-.cel-6{width:48%;}
+.cel-5{width:46%;}
+.cel-6{width:46%;}
 .cel-centre{
-	width:48%;
+	width:46%;
 	cursor: default;
 }
 
@@ -183,13 +185,13 @@ and (max-device-width: 736px) {
 	/* sommaire */
 	.ecran.sommaire{flex-direction: column;}
 	.cel h1{font-size: 1.3em;}
-	.cel-1{width:96%;}
-	.cel-2{width:96%;}
-	.cel-3{width:96%;}
-	.cel-4{width:96%;}
-	.cel-5{width:96%;}
-	.cel-6{width:96%;}
-	.cel-centre{order:-1;width:96%;}
+	.cel-1{width:94%;}
+	.cel-2{width:94%;}
+	.cel-3{width:94%;}
+	.cel-4{width:94%;}
+	.cel-5{width:94%;}
+	.cel-6{width:94%;}
+	.cel-centre{order:-1;width:94%;}
 	/* satellite */
 	.ligne{flex-direction: column;}
 	.col-gauche{width:98%;}
