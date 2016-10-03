@@ -1,10 +1,7 @@
 /* les cellules du sommaire */
 .ecran.sommaire{color:#fff;}
 .ecran.sommaire .cel h2{font-size: 1.3em}
-.sommaire .cel-centre{
-	background-image: url(img/bois-3.jpg);
-	background-size: cover
-}
+.sommaire .cel-centre{background-image: url(img/bois-3.jpg); background-size: cover}
 .sommaire .cel-1{background-color: #458913}
 .sommaire .cel-2{background-color: #64A00F}
 .sommaire .cel-3{background-color: #A7D53A}
