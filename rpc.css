@@ -83,7 +83,6 @@ body{margin:0;padding:0;}
 	flex-direction: row;
 }
 
-.ecran.satellite .sommaire li {margin: 10px}
 .ecran.satellite .titre-sat{margin:20px;}
 
 /*
@@ -115,7 +114,9 @@ body{margin:0;padding:0;}
 .satellite .btnFermerSat{cursor:pointer; width:24px; height:24px; line-height:24px; border-radius:12px;border:1px solid #ccc;
 background:#aaa; color:#fff; text-align:center; float: right}
 .satellite .intro{margin:20px;}
-.satellite .sommaire{margin:20px;}
+.satellite .sommaire{margin:40px;}
+
+
 /* fin satellite */
 
 /* sous-satellite (modale) */
@@ -164,6 +165,7 @@ background: #aaa;color:#fff;text-align: center;float: right}
 
 .modale a, .modale a:visited, .modale a:active{
   color:#337ab7;
+  color:#fff;
   text-decoration: none;
   font-weight: 700
 }

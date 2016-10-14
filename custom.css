@@ -16,7 +16,15 @@
 .satellite .titre-sat{}
 .satellite .intro{}
 .satellite .sommaire{}
-.satellite .itemsat{}
+.satellite .itemsat{
+	list-style-type: none;
+	margin:20px;
+	padding:10px;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px 0px #aaa;
+	text-align: center;
+	background-image: url(img/bois-3.jpg); background-size: cover;color:#fff;
+}
 
 /* le satellite 1 */
 .satellite.sat-1 .col-gauche{background-color: #458913;color: #fff}
@@ -26,17 +34,21 @@
 .satellite.sat-1 .itemsat{}
 
 .satellite.sat-2 .col-gauche{background-color: #64A00F;color: #fff}
+
 .satellite.sat-3 .col-gauche{background-color: #A7D53A;color: #fff}
+
 .satellite.sat-4 .col-gauche{background-color: #30602B;color: #fff}
+
 .satellite.sat-5 .col-gauche{background-color: #87BB43;color: #fff}
 
 /* les modales (sous-satellites) */
 
 /* toutes les modales */
-.modale .titre{};
-.modale .intro{};
-.modale .sommaire{};
-.modale .itemmodale{};
+.modale .wrapper-modale{background-image: url(img/ciel.jpg);background-size: cover;color:#fff;}
+.modale .titre{color:#fff;};
+.modale .intro{color:#fff;};
+.modale .sommaire{color:#fff;};
+.modale .itemmodale{color:#fff;};
 
 /* toutes les modales du satellite 1 */
 .modale.sat-1{}
