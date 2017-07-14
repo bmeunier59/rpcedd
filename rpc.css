@@ -21,7 +21,8 @@ body{margin:0;padding:0;}
 	min-width:100vw;
 	opacity:1;
 	background-color: white;
-	z-index:1000
+	z-index:1000;
+	color:#fff;
 }
 
 
